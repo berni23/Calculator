@@ -20,56 +20,57 @@
                     <button class="navButton" id="yellow"></button>
                     <button class="navButton" id="green"></button>
                 </div>
-                <label class="switch" >
+                <label class="switch">
                     <input type="checkbox" checked>
                     <span class="slider round" onclick="toggleLayout()"></span>
                 </label>
             </div>
             <div class="screen">
                 <!-- Outputs will be displayed -->
-                <p id="screenID" class="operations"></p>
+                <p class="operationsList"></p>
+                <p class="operations"></p>
 
             </div>
         </section>
         <section class="buttons" id="buttons">
             <!-- display flex (default)-->
             <div class="buttonsRow">
-                <button class="button-clear C" onclick="clearScreen()">C</button>
-                <button class="button-plusMinus" id = "plusMinus"><span>&#177;</span></button>
-                <button class="button-symbol " id="perc"><span>&#37;</span></button>
-                <button class="button-symbol " id="divide"><span>&#247;</span></button>
+                <button class="button-clear C">C</button>
+                <button class="button-plusMinus" id="plusMinus" data-eval="*-1">&#177;</button>
+                <button class=" button-symbol " id=" perc" data-eval='%'>&#37;</button>
+                <button class="button-symbol " id="divide" data-eval="/">&#247;</button>
             </div>
             <div class="buttonsRow">
-                <button class="button-number ">7</button>
-                <button class="button-number ">8</button>
-                <button class="button-number ">9</button>
-                <button class="button-symbol " id="multiply"><span>&#215;</span></button>
+                <button class="button-number" data-eval="7">7</button>
+                <button class="button-number" data-eval="8">8</button>
+                <button class="button-number" data-eval="9">9</button>
+                <button class="button-symbol" id="multiply" data-eval=" * ">&#215;</button>
             </div>
             <div class="buttonsRow">
-                <button class="button-number ">4</button>
-                <button class="button-number ">5</button>
-                <button class="button-number ">6</button>
-                <button class="button-symbol " id="minus"><span>&#8722;</span></button>
+                <button class="button-number" data-eval="4">4</button>
+                <button class="button-number" data-eval="5">5</button>
+                <button class="button-number" data-eval="6">6</button>
+                <button class="button-symbol" id="minus" data-eval="-">&#8722;</button>
             </div>
             <div class="buttonsRow">
-                <button class="button-number ">1</button>
-                <button class="button-number ">2</button>
-                <button class="button-number ">3</button>
-                <button class="button-symbol" id="plus"><span>&#43;</span></button>
+                <button class="button-number" data-eval="1">1</button>
+                <button class="button-number" data-eval="2">2</button>
+                <button class="button-number" data-eval="3">3</button>
+                <button class="button-symbol" id="plus" data-eval="+">&#43;</button>
             </div>
 
             <div class="buttonsRow">
-                <button class="button-number ">0</button>
-                <button class="button-dot" id = "float" style="font-weight:bold; font-size:30px"><span>.</span></button>
-                <button class="button-pi" id = "pi"><span>&Pi;</span></button>
-                <button class="button-equal" onclick="equal()"><span>&#61;</span></button>
+                <button class="button-number" data-eval="0">0</button>
+                <button class="button-dot" id="float" style="font-weight:bold; font-size:30px" data-eval=".">.</button>
+                <button class="button-pi" id="pi" data-eval="3.1415926535">&Pi;</button>
+                <button class="button-equal">&#61;</button>
             </div>
         </section>
     </div>
     <script src="dom.js"></script>
     <script src="https://github.com/adactio/FitText.js/blob/master/fittext.js"></script>
     <script>
-      //  window.fitText(document.getElementById("screenID"));
+        //  window.fitText(document.getElementById("screenID"));
     </script>
 </body>
 

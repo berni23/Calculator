@@ -1,5 +1,5 @@
 body {
-    margin: 150px 0 0 0 ;
+    margin: 150px 0 0 0;
     background-color: #a1cbbb;
 }
 
@@ -18,13 +18,19 @@ body {
 }
 
 .screenWrapper {
-    height: 205px;
+    height: 200px !important;
     width: 100%;
     background-color: #f4fdfb;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
     border-radius: 20px 20px 0 0;
     overflow: hidden;
+}
+
+.screen {
+
+    height: 85px;
+    width: 100%;
 }
 
 .buttons {
@@ -51,7 +57,7 @@ div.dots {
     margin-left: 10px;
     margin-top: 5px;
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
 }
 
 label.changeMode {
@@ -62,9 +68,9 @@ label.changeMode {
     border-radius: 50%;
     height: 10px;
     width: 10px;
-    border: 0px ;
-    margin: 0px ;
-    padding:0px ;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 button.navButton:focus {
@@ -83,15 +89,16 @@ button.navButton:focus {
     background-color: #28ca40;
 }
 
+
 .operations {
-    font-size: 55px;
+    font-size: 50px;
     text-align: right;
     padding-right: 30px;
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 }
 
 .switch {
-    margin-top:5px;
+    margin-top: 5px;
     position: relative;
     display: inline-block;
     width: 50px;
@@ -189,7 +196,7 @@ div.buttonsRow button:hover {
 
 .buttonsRow .button-number,
 .buttonsRow .button-dot,
-.button-pi{
+.button-pi {
     background-color: white;
 }
 
@@ -212,7 +219,7 @@ div.buttonsRow button:hover {
 
 .buttons-dark {
     background-color: #2e3951;
-    border-radius: 0 0 20px 20px ;
+    border-radius: 0 0 20px 20px;
 }
 
 .btn-num-dark,
@@ -221,5 +228,3 @@ div.buttonsRow button:hover {
     background-color: #2e3951 !important;
     color: #92a49d;
 }
-
-
