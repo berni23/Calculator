@@ -1,0 +1,225 @@
+body {
+    margin: 150px 0 0 0 ;
+    background-color: #a1cbbb;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.calculatorBody {
+
+    border-radius: 20px;
+    height: 665px;
+    width: 370px;
+    margin: auto;
+    background-color: white;
+
+}
+
+.screenWrapper {
+    height: 205px;
+    width: 100%;
+    background-color: #f4fdfb;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.buttons {
+    height: 420px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/************Screen**************/
+
+div.nav {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.dots {
+    float: left;
+    width: 60px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around ;
+}
+
+label.changeMode {
+    float: right;
+}
+
+.dots button.navButton {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    border: 0px ;
+    margin: 0px ;
+    padding:0px ;
+}
+
+button.navButton:focus {
+    outline: none;
+}
+
+#red {
+    background-color: #fd544d;
+}
+
+#yellow {
+    background-color: #ffc02f;
+}
+
+#green {
+    background-color: #28ca40;
+}
+
+.operations {
+    font-size: 55px;
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 80px;
+}
+
+.switch {
+    margin-top:5px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: 35px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 17px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #18d4a3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #18d4a3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/********buttons********/
+
+
+div.buttonsRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.buttonsRow button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 0px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 28px;
+    vertical-align: middle;
+    opacity: 0.7;
+}
+
+div.buttonsRow button:focus {
+    outline: none;
+}
+
+div.buttonsRow button:hover {
+    opacity: 1;
+}
+
+.button-symbol,
+.button-clear,
+.button-plusMinus {
+    background-color: #f4fdfb;
+}
+
+
+.buttonsRow .button-number,
+.buttonsRow .button-dot,
+.button-pi{
+    background-color: white;
+}
+
+.button-equal,
+.slider-dark {
+
+    background-color: #18d4a3;
+    color: white;
+}
+
+/********* TOGGLE LAYOUT *********/
+
+.screenWrapper-dark,
+.btn-sym-dark,
+.btn-clear-dark,
+.btn-plusMinus-dark {
+    background-color: #212b41;
+    color: #18d4a3;
+}
+
+.buttons-dark {
+    background-color: #2e3951;
+    border-radius: 0 0 20px 20px ;
+}
+
+.btn-num-dark,
+.btn-dot-dark,
+.btn-pi-dark {
+    background-color: #2e3951 !important;
+    color: #92a49d;
+}
+
+

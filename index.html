@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculatorBody">
+        <section class="screenWrapper" id="screenWrapper">
+            <div class="nav">
+                <!-- display flex (default)-->
+                <div class="dots">
+                    <!-- float left-->
+                    <button class="navButton" id="red"></button>
+                    <button class="navButton" id="yellow"></button>
+                    <button class="navButton" id="green"></button>
+                </div>
+                <label class="switch" >
+                    <input type="checkbox" checked>
+                    <span class="slider round" onclick="toggleLayout()"></span>
+                </label>
+            </div>
+            <div class="screen">
+                <!-- Outputs will be displayed -->
+                <p id="screenID" class="operations"></p>
+
+            </div>
+        </section>
+        <section class="buttons" id="buttons">
+            <!-- display flex (default)-->
+            <div class="buttonsRow">
+                <button class="button-clear C" onclick="clearScreen()">C</button>
+                <button class="button-plusMinus" id = "plusMinus"><span>&#177;</span></button>
+                <button class="button-symbol " id="perc"><span>&#37;</span></button>
+                <button class="button-symbol " id="divide"><span>&#247;</span></button>
+            </div>
+            <div class="buttonsRow">
+                <button class="button-number ">7</button>
+                <button class="button-number ">8</button>
+                <button class="button-number ">9</button>
+                <button class="button-symbol " id="multiply"><span>&#215;</span></button>
+            </div>
+            <div class="buttonsRow">
+                <button class="button-number ">4</button>
+                <button class="button-number ">5</button>
+                <button class="button-number ">6</button>
+                <button class="button-symbol " id="minus"><span>&#8722;</span></button>
+            </div>
+            <div class="buttonsRow">
+                <button class="button-number ">1</button>
+                <button class="button-number ">2</button>
+                <button class="button-number ">3</button>
+                <button class="button-symbol" id="plus"><span>&#43;</span></button>
+            </div>
+
+            <div class="buttonsRow">
+                <button class="button-number ">0</button>
+                <button class="button-dot" id = "float" style="font-weight:bold; font-size:30px"><span>.</span></button>
+                <button class="button-pi" id = "pi"><span>&Pi;</span></button>
+                <button class="button-equal" onclick="equal()"><span>&#61;</span></button>
+            </div>
+        </section>
+    </div>
+    <script src="dom.js"></script>
+    <script src="https://github.com/adactio/FitText.js/blob/master/fittext.js"></script>
+    <script>
+      //  window.fitText(document.getElementById("screenID"));
+    </script>
+</body>
+
+</html>
